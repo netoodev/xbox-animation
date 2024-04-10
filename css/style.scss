@@ -13,3 +13,58 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+#xbox-x1 {
+    animation: xbox-text 7s ease 0s forwards;
+}
+
+#xbox-x2 {
+    animation: xbox-text 7s ease 0s forwards;
+}
+
+#xbox-b {
+    animation: xbox-text 7s ease 0s forwards;
+}
+
+#xbox-o {
+    animation: xbox-text 7s ease 0s forwards;
+}
+
+@keyframes xbox-text {
+    0%{
+        fill-opacity: 0;
+        stroke-dasharray: 1 1000;
+        stroke-dashoffset: 0;
+        stroke-width: 0;
+        opacity: 1;
+        transform: translate3d(0,-110px,0);
+    }
+    30%{
+        fill-opacity: 0;
+        stroke-dasharray: 150 0;
+        stroke-dashoffset: 0;
+        stroke-width: 1;
+        opacity: 1;
+        transform: translate3d(0,-110px,0);
+    }
+    60%,90%{
+        fill-opacity: 1;
+        stroke-dasharray: 150 0;
+        stroke-dashoffset: 0;
+        stroke-width: 0;
+        opacity: 1;
+        transform: translate3d(0,-110px,0);
+    }
+    100%{
+        fill-opacity: 0;
+        stroke-dasharray: 150 0;
+        stroke-dashoffset: 0;
+        stroke-width: 0;
+        opacity: 0;
+        transform: translate3d(0,-110px,0);
+    }
+}
+
+#xbox-logo {
+    opacity: 0;
+}
