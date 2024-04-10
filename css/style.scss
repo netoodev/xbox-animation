@@ -97,3 +97,28 @@ body {
         transform: translate3d(0,70px,0);
     }
 }
+
+svg {
+    filter: drop-shadow(0px 0px 0px rgba(247,247,247, 0))
+    drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+    animation: xbox-shadow 12s ease 0s forwards;
+}
+
+@keyframes xbox-shadow {
+    0%,20%{
+        filter: drop-shadow(0px 0px 0px rgba(247,247,247, 0))
+        drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+    }
+    40%, 50%{
+        filter: drop-shadow(0px 0px 50px rgba(247,247,247, 0.5))
+        drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.9));
+    }
+    75%{
+        filter: drop-shadow(0px 0px 0px rgba(247,247,247, 0))
+        drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+    }
+    100%{
+        filter: drop-shadow(0px 0px 50px rgba(247,247,247, 0.5))
+        drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.9));
+    }
+}
