@@ -11,6 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 #xbox-x1 {
@@ -65,4 +66,32 @@ body {
 }
 #xbox-logo {
   opacity: 0;
+  animation: xbox-logo 3.5s ease 7s forwards;
+}
+
+@keyframes xbox-logo {
+  0% {
+    fill-opacity: 0;
+    stroke-dasharray: 1 1000;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+    opacity: 1;
+    transform: translate3d(0, 70px, 0);
+  }
+  70% {
+    fill-opacity: 0;
+    stroke-dasharray: 150 0;
+    stroke-dashoffset: 0;
+    stroke-width: 1;
+    opacity: 1;
+    transform: translate3d(0, 70px, 0);
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-dasharray: 150 0;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+    opacity: 1;
+    transform: translate3d(0, 70px, 0);
+  }
 }/*# sourceMappingURL=style.css.map */
